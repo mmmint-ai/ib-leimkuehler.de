@@ -11,7 +11,7 @@ header:
   has_nav: true
   nav:
     Start: "index"
-    Leistungen: "/index#services"
+    Leistungen: "/#services"
   palette: blue
   menu:
     actions:
