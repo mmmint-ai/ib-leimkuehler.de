@@ -11,7 +11,7 @@ header:
   has_nav: true
   nav:
     Start: "index"
-    Leistungen: "/#services"
+    Leistungen: "/index/#services"
   palette: blue
   menu:
     actions:
@@ -21,10 +21,10 @@ footer:
   content: "&copy; Ingenieurbüro Leimkühler UG (haftungsbeschränkt). All rights reserved."
   links:
     - text: Impressum
-      url: "impressum"
+      url: "/impressum"
       new_window: false
     - text: Datenschutz
-      url: "datenschutz"
+      url: "/datenschutz"
       new_window: false
 
 

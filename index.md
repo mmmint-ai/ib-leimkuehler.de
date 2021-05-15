@@ -116,7 +116,8 @@ sections:
     component: content_block.html
     title: Ansprechpartner
     content: |-
-      <img src="images/jan-leimkuehler.png" alt="check"><br><br>
+      <img src="images/jan-leimkuehler.png" alt="check" style="max-width: 300px"></img>
+      <br><br>
       **Jan Leimkühler**<br>
       Ing. MBA & Eng.<br>
       Sicherheitsingenieur, CE-Koordinator (TÜV)
