@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>
+      {% assign title_is_not_empty = page.title | is_not_empty %}{% if
+      title_is_not_empty %}{{ page.title }} - {% endif %}{{ site.title }}
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"content="Bargeld anstatt Werkstattbesuch! In unter 5 Minuten zum Kostenvoranschlag! Mit MrFiktiv schnell und einfach Fahrzeugschäden abrechnen."/>
+    <meta name="title" content ="MrFiktiv - Fahrzeugschäden fiktiv abrechnen!">
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,700i&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
+
+    {% if page.meta-title %}
+    <meta property="og:title" content="{{ page.meta-title }}" />
+    {% elsif page.title %}
+    <meta property="og:title" content="{{ page.title }}" />
+    {% else %}
+    <meta property="og:title" content="{{ site.title }}" />
+    {% endif %} {% if page.meta-description %}
+    <meta property="og:description" content="{{ page.meta-description }}" />
+    <meta property="description" content="{{ page.meta-description }}" />
+    {% elsif page.subtitle %}
+    <meta property="og:description" content="{{ page.subtitle }}" />
+    <meta property="description" content="{{ page.subtitle }}" />
+    {% else %}
+    <meta
+      property="og:description"
+      content="{{ page.content | strip_html | xml_escape | truncatewords: 100 }}"
+    />
+    <meta
+      property="description"
+      content="{{ page.content | strip_html | xml_escape | truncatewords: 100 }}"
+    />
+    {% endif %}
+
+    <meta property="og:type" content="website" />
+    <meta name="author" content="mrfiktiv" />
+
+    {% if page.id %}
+    <meta property="og:url" content="{{ page.url | absolute_url }}" />
+    <link rel="canonical" href="{{ page.url | absolute_url }}" />
+    {% else %}
+    <meta
+      property="og:url"
+      content="{{ page.url | absolute_url | strip_index }}"
+    />
+    <link rel="canonical" href="{{ page.url | absolute_url | strip_index }}" />
+    {% endif %} {% if page.share-img %}
+    <meta property="og:image" content="{{ page.share-img | absolute_url }}" />
+    {% endif %}
+
+    <!-- Twitter summary cards -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@mr_fiktiv" />
+    <meta name="twitter:creator" content="@mr_fiktiv" />
+
+    {% if page.meta-title %}
+    <meta name="twitter:title" content="{{ page.meta-title }}" />
+    {% elsif page.title %}
+    <meta name="twitter:title" content="{{ page.title }}" />
+    {% else %}
+    <meta name="twitter:title" content="{{ site.title }}" />
+    {% endif %} {% if page.meta-description %}
+    <meta name="twitter:description" content="{{ page.meta-description }}" />
+    {% elsif page.subtitle %}
+    <meta name="twitter:description" content="{{ page.subtitle }}" />
+    {% else %}
+    <meta
+      name="twitter:description"
+      content="{{ page.content | strip_html | xml_escape | truncatewords: 100 }}"
+    />
+    {% endif %} {% if page.share-img %}
+    <meta name="twitter:image" content="{{ page.share-img | absolute_url }}" />
+    {% endif %}
+
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="{{ site.title }}  {{ site.description }}"
+      href="{{ '/feed.xml' | absolute_url }}"
+    />
+  </head>
+
+  <body>
+    {{ content }}
+    <!-- Scripts -->
+
+
+    <script src="{{ 'assets/js/plugins.js' | relative_url }}"></script>
+    <script src="{{ 'assets/js/init.js' | relative_url }}"></script>
+	<script src="{{ 'assets/js/main.js' | relative_url }}"></script>
+  </body>
+</html>

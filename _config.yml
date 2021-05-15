@@ -1,0 +1,63 @@
+title: Ingenieurbüro Leimkühler
+baseurl: /
+permalink: "/:year/:month/:day/:title/"
+collections:
+  posts:
+    permalink: "/blog/:year/:month/:day/:title/"
+
+header:
+  title: Sondermaschinenspezialist
+  logo_img: images/logo.jpg
+  has_nav: true
+  nav:
+    Start: "index"
+    Leistungen: "/#services"
+  palette: blue
+  menu:
+    actions:
+      - label: Sign Up
+        url: /signup
+footer:
+  content: "&copy; Ingenieurbüro Leimkühler UG (haftungsbeschränkt). All rights reserved."
+  links:
+    - text: Impressum
+      url: "impressum"
+      new_window: false
+    - text: Datenschutz
+      url: "datenschutz"
+      new_window: false
+
+
+defaults:
+  -
+    scope:
+      path:            "drafts/**"
+    values:
+      sitemap:         false
+  -
+    scope:
+      path:            "images/**"
+    values:
+      sitemap:         false
+
+sass:
+  indentWidth: 4
+  style: nested
+  precision: 10
+plugins:
+  - jekyll-menus
+  - jekyll-sitemap
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - ssg-build.sh
+  - LICENSE.md
+  - README.md
+  - netlify.toml
+  - stackbit-build.sh
+  - stackbit-pull.js

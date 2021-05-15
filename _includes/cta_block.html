@@ -1,0 +1,12 @@
+<section id="{{ include.section.section_id }}" class="block cta-block textallingcenter">
+  <div>
+        <br><br>
+        <h1>{{ include.section.title }}</h1>
+        {% assign subtitle_is_not_empty = include.section.subtitle | is_not_empty %}
+        {% if subtitle_is_not_empty %}
+        <h3>
+          {{ include.section.subtitle }}
+        </h3>
+        {% endif %}
+  </div><!-- .inner -->
+</section><!-- .hero -->
