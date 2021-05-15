@@ -1,7 +1,7 @@
 ---
 title: Home
 subtitle: >-
-  Schaden am Auto und Lust auf bares Geld? Jetzt fiktiv abrechnen. Bequem von zu Hause & ohne Werkstattbesuch.
+  Ingenieurleistungen für CE-Kennzeichnung, Maschinensicherheit und Arbeitsschutz.
 share-image: images/logo.jpg
 sections:
 
