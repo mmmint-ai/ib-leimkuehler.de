@@ -120,7 +120,7 @@ sections:
       <br><br>
       **Jan Leimkühler**<br>
       Ing. MBA & Eng.<br>
-      Sicherheitsingenieur, CE-Koordinator (TÜV)
+      Sicherheitsingenieur, CE-Koordinator (TÜV)<br>
       [Jan Leimkühler | XING](https://www.xing.com/profile/Jan_Leimkuehler)
 layout: home
 ---
