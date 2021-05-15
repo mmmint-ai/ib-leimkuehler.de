@@ -109,7 +109,7 @@ sections:
       Öffnungszeiten Büro:<br>
       Mo. - Do.:  		16:15 – 20:15 Uhr<br>
       Fr.:		14:00 – 20:15 Uhr<br>
-      Sa.:		08:00 – 20:15 Uhr<br><br>
+      Sa.:		08:00 – 14:00 Uhr<br><br>
       **Termine außerhalb der Bürozeiten nach Vereinbarung.**
 
   - section_id: about
