@@ -104,7 +104,7 @@ sections:
       Ingenieurbüro Leimkühler<br>
       Obere Findelstätte 7<br>
       49124 Georgsmarienhütte<br>
-      Tel.: 0173/7190949<br>
+      Tel.: 05401/1593294<br>
       E-Mail: [jan.leimkuehler@ib-leimkuehler.de](mailto:jan.leimkuehler@ib-leimkuehler.de)<br><br>
       Öffnungszeiten Büro:<br>
       Mo. - Do.:  		16:15 – 20:15 Uhr<br>
