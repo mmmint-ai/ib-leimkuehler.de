@@ -7,7 +7,7 @@ collections:
 
 header:
   title: Sondermaschinenspezialist
-  logo_img: images/logo.jpg
+  logo_img: images/logo.png
   has_nav: true
   nav:
     Start: "index"

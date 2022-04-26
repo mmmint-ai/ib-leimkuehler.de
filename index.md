@@ -2,7 +2,7 @@
 title: Home
 subtitle: >-
   Ingenieurleistungen für CE-Kennzeichnung, Maschinensicherheit und Arbeitsschutz.
-share-image: images/logo.jpg
+share-image: images/logo.png
 sections:
 
   - section_id: hero
